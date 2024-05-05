@@ -23,7 +23,6 @@ class UserAdapter(list: List<User>?) :
             binding.imageView.setImageResource(it?:0)
         }
 
-
         binding.materialCardView.setOnClickListener {
             Navigation.findNavController(view).navigate(HomeFragmentDirections.actionHomeFragmentToProfileFragment(item))
         }
